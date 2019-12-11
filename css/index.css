@@ -140,6 +140,7 @@ html {
 }
 .root {
   width: 97%;
+  margin: 0rem auto;
 }
 .top {
   display: flex;
