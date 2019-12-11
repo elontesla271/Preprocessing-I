@@ -202,6 +202,10 @@ html {
   background-color: #808080;
   color: white;
 }
+.center-container .img-text div a {
+  text-decoration: none;
+  color: white;
+}
 .center-container hr {
   margin: 3% 0%;
 }
