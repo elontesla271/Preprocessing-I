@@ -1,1 +1,287 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+.root {
+  width: 97%;
+  margin: 0rem auto;
+}
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 2% 0%;
+}
+@media (max-width: 500px) {
+  .top {
+    flex-direction: column;
+  }
+}
+.top .nav-container {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .top .nav-container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .top .nav-container {
+    width: 100%;
+  }
+  .top .nav-container nav {
+    text-align: center;
+    width: 100%;
+    padding: 1% 0%;
+    border-bottom: 1px solid #DFDFDF;
+  }
+}
+.center-container {
+  background-color: #E9ECEF;
+  padding: 4% 2% 3%;
+}
+.center-container .img-container {
+  width: 30%;
+}
+.center-container .img-container img {
+  max-width: 100%;
+}
+.center-container .img-text h1 {
+  font-size: 5rem;
+}
+.center-container .img-text p {
+  font-size: 1.6rem;
+}
+.center-container .img-text div {
+  font-size: 2rem;
+  width: 16rem;
+  border: 1px solid black;
+  text-align: center;
+  padding: 1% 0%;
+  margin: 2% 0% 5%;
+  background-color: #808080;
+  color: white;
+}
+.center-container .img-text div a {
+  text-decoration: none;
+  color: white;
+}
+.center-container hr {
+  margin: 3% 0%;
+}
+.info-container {
+  display: flex;
+  flex-direction: row;
+  padding: 3% 0%;
+}
+@media (max-width: 500px) {
+  .info-container {
+    flex-direction: column;
+  }
+}
+.info-container .info-entry {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .info-container .info-entry {
+    width: 100%;
+  }
+}
+.info-container h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+.info-container p {
+  font-size: 1.6rem;
+}
+.info-container h3 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+.info-container table,
+.info-container th,
+.info-container td {
+  border: 1px solid #DFDFDF;
+  font-size: 1.6rem;
+  width: 100%;
+  padding: 2% 2%;
+}
+.history-container h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+.history-container table {
+  width: 100%;
+  font-size: 1.6rem;
+}
+.history-container table .first {
+  font-weight: bold;
+}
+.history-container table .odd {
+  background-color: #F2F2F2;
+}
+.history-container table tr {
+  border-top: 1px solid #DFDFDF;
+  border-bottom: 1px solid #DFDFDF;
+}
+.history-container table th {
+  text-align: left;
+  font-weight: bold;
+}
+.history-container table th,
+.history-container table td {
+  padding: 1% 0% 1% 1%;
+}
+.copyright-container {
+  background-color: #808080;
+  margin-top: 2%;
+}
+.copyright-container p {
+  color: white;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 2% 0% 3%;
+}
